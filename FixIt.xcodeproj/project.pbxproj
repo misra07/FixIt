@@ -13,6 +13,23 @@
 		CD6B824B250E63EB008D1047 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6B8249250E63EB008D1047 /* Main.storyboard */; };
 		CD6B824D250E63EE008D1047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6B824C250E63EE008D1047 /* Assets.xcassets */; };
 		CD6B8250250E63EE008D1047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6B824E250E63EE008D1047 /* LaunchScreen.storyboard */; };
+		CD6B8259250E6E5B008D1047 /* BG1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD6B8258250E6E5B008D1047 /* BG1.jpg */; };
+		CD6B825B250E6F77008D1047 /* BG2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD6B825A250E6F77008D1047 /* BG2.jpg */; };
+		CD6B8268250E6FD0008D1047 /* BG8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD6B825C250E6FCD008D1047 /* BG8.jpg */; };
+		CD6B8269250E6FD0008D1047 /* BG4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD6B825D250E6FCD008D1047 /* BG4.jpg */; };
+		CD6B826A250E6FD0008D1047 /* BG10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD6B825E250E6FCE008D1047 /* BG10.jpg */; };
+		CD6B826B250E6FD0008D1047 /* BG6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD6B825F250E6FCE008D1047 /* BG6.jpg */; };
+		CD6B826C250E6FD0008D1047 /* BG11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD6B8260250E6FCE008D1047 /* BG11.jpg */; };
+		CD6B826D250E6FD0008D1047 /* BG13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD6B8261250E6FCE008D1047 /* BG13.jpg */; };
+		CD6B826E250E6FD0008D1047 /* BG14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD6B8262250E6FCE008D1047 /* BG14.jpg */; };
+		CD6B826F250E6FD0008D1047 /* BG5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD6B8263250E6FCF008D1047 /* BG5.jpg */; };
+		CD6B8270250E6FD0008D1047 /* BG3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD6B8264250E6FCF008D1047 /* BG3.jpg */; };
+		CD6B8271250E6FD0008D1047 /* BG12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD6B8265250E6FCF008D1047 /* BG12.jpg */; };
+		CD6B8272250E6FD0008D1047 /* BG7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD6B8266250E6FCF008D1047 /* BG7.jpg */; };
+		CD6B8273250E6FD0008D1047 /* BG9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD6B8267250E6FD0008D1047 /* BG9.jpg */; };
+		CD6B8278250E8520008D1047 /* Logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = CD6B8277250E8520008D1047 /* Logo1.png */; };
+		CD6B827A250E9350008D1047 /* FixItLogoW1-01.png in Resources */ = {isa = PBXBuildFile; fileRef = CD6B8279250E9350008D1047 /* FixItLogoW1-01.png */; };
+		CD6B827C250EB62D008D1047 /* FixItLogoW2.png in Resources */ = {isa = PBXBuildFile; fileRef = CD6B827B250EB62D008D1047 /* FixItLogoW2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +41,23 @@
 		CD6B824C250E63EE008D1047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD6B824F250E63EE008D1047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD6B8251250E63EE008D1047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD6B8258250E6E5B008D1047 /* BG1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG1.jpg; sourceTree = "<group>"; };
+		CD6B825A250E6F77008D1047 /* BG2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG2.jpg; sourceTree = "<group>"; };
+		CD6B825C250E6FCD008D1047 /* BG8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG8.jpg; sourceTree = "<group>"; };
+		CD6B825D250E6FCD008D1047 /* BG4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG4.jpg; sourceTree = "<group>"; };
+		CD6B825E250E6FCE008D1047 /* BG10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG10.jpg; sourceTree = "<group>"; };
+		CD6B825F250E6FCE008D1047 /* BG6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG6.jpg; sourceTree = "<group>"; };
+		CD6B8260250E6FCE008D1047 /* BG11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG11.jpg; sourceTree = "<group>"; };
+		CD6B8261250E6FCE008D1047 /* BG13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG13.jpg; sourceTree = "<group>"; };
+		CD6B8262250E6FCE008D1047 /* BG14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG14.jpg; sourceTree = "<group>"; };
+		CD6B8263250E6FCF008D1047 /* BG5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG5.jpg; sourceTree = "<group>"; };
+		CD6B8264250E6FCF008D1047 /* BG3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG3.jpg; sourceTree = "<group>"; };
+		CD6B8265250E6FCF008D1047 /* BG12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG12.jpg; sourceTree = "<group>"; };
+		CD6B8266250E6FCF008D1047 /* BG7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG7.jpg; sourceTree = "<group>"; };
+		CD6B8267250E6FD0008D1047 /* BG9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG9.jpg; sourceTree = "<group>"; };
+		CD6B8277250E8520008D1047 /* Logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo1.png; sourceTree = SOURCE_ROOT; };
+		CD6B8279250E9350008D1047 /* FixItLogoW1-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FixItLogoW1-01.png"; sourceTree = SOURCE_ROOT; };
+		CD6B827B250EB62D008D1047 /* FixItLogoW2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FixItLogoW2.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +97,33 @@
 				CD6B824C250E63EE008D1047 /* Assets.xcassets */,
 				CD6B824E250E63EE008D1047 /* LaunchScreen.storyboard */,
 				CD6B8251250E63EE008D1047 /* Info.plist */,
+				CD6B8277250E8520008D1047 /* Logo1.png */,
+				CD6B8279250E9350008D1047 /* FixItLogoW1-01.png */,
+				CD6B827B250EB62D008D1047 /* FixItLogoW2.png */,
+				CD6B8257250E6CC0008D1047 /* BG */,
 			);
 			path = FixIt;
+			sourceTree = "<group>";
+		};
+		CD6B8257250E6CC0008D1047 /* BG */ = {
+			isa = PBXGroup;
+			children = (
+				CD6B8258250E6E5B008D1047 /* BG1.jpg */,
+				CD6B825A250E6F77008D1047 /* BG2.jpg */,
+				CD6B8264250E6FCF008D1047 /* BG3.jpg */,
+				CD6B825D250E6FCD008D1047 /* BG4.jpg */,
+				CD6B8263250E6FCF008D1047 /* BG5.jpg */,
+				CD6B825F250E6FCE008D1047 /* BG6.jpg */,
+				CD6B8266250E6FCF008D1047 /* BG7.jpg */,
+				CD6B825C250E6FCD008D1047 /* BG8.jpg */,
+				CD6B8267250E6FD0008D1047 /* BG9.jpg */,
+				CD6B825E250E6FCE008D1047 /* BG10.jpg */,
+				CD6B8260250E6FCE008D1047 /* BG11.jpg */,
+				CD6B8265250E6FCF008D1047 /* BG12.jpg */,
+				CD6B8261250E6FCE008D1047 /* BG13.jpg */,
+				CD6B8262250E6FCE008D1047 /* BG14.jpg */,
+			);
+			path = BG;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +184,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD6B8273250E6FD0008D1047 /* BG9.jpg in Resources */,
+				CD6B825B250E6F77008D1047 /* BG2.jpg in Resources */,
+				CD6B8278250E8520008D1047 /* Logo1.png in Resources */,
+				CD6B826A250E6FD0008D1047 /* BG10.jpg in Resources */,
+				CD6B827C250EB62D008D1047 /* FixItLogoW2.png in Resources */,
+				CD6B8271250E6FD0008D1047 /* BG12.jpg in Resources */,
+				CD6B826D250E6FD0008D1047 /* BG13.jpg in Resources */,
+				CD6B826C250E6FD0008D1047 /* BG11.jpg in Resources */,
+				CD6B8259250E6E5B008D1047 /* BG1.jpg in Resources */,
+				CD6B8272250E6FD0008D1047 /* BG7.jpg in Resources */,
+				CD6B826E250E6FD0008D1047 /* BG14.jpg in Resources */,
+				CD6B826B250E6FD0008D1047 /* BG6.jpg in Resources */,
+				CD6B8269250E6FD0008D1047 /* BG4.jpg in Resources */,
 				CD6B8250250E63EE008D1047 /* LaunchScreen.storyboard in Resources */,
+				CD6B826F250E6FD0008D1047 /* BG5.jpg in Resources */,
+				CD6B8270250E6FD0008D1047 /* BG3.jpg in Resources */,
+				CD6B8268250E6FD0008D1047 /* BG8.jpg in Resources */,
 				CD6B824D250E63EE008D1047 /* Assets.xcassets in Resources */,
+				CD6B827A250E9350008D1047 /* FixItLogoW1-01.png in Resources */,
 				CD6B824B250E63EB008D1047 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +363,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CBN4P2C6D4;
 				INFOPLIST_FILE = FixIt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.mvnBits.FixIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +382,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CBN4P2C6D4;
 				INFOPLIST_FILE = FixIt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +390,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.mvnBits.FixIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

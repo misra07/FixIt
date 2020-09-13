@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RyJ-v2-SUN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,129 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FixIt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="80e-Cp-ulu" userLabel="BG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="907"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FixItLogoW2.png" translatesAutoresizingMaskIntoConstraints="NO" id="7GR-jY-v4w" userLabel="Logo">
+                                <rect key="frame" x="107" y="248" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="f6C-u6-QC7"/>
+                                    <constraint firstAttribute="width" constant="200" id="usO-Ol-rSh"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YzZ-9e-BNa">
+                                <rect key="frame" x="64" y="448" width="330" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Qi1-YU-5Si"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsz-bO-XB2" userLabel="House">
+                                <rect key="frame" x="20" y="448" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="09s-0Z-yAO"/>
+                                    <constraint firstAttribute="width" constant="34" id="XD0-mJ-rLb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" image="house.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pmz-lV-G7f">
+                                <rect key="frame" x="20" y="490" width="34" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" image="lock.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PkM-N0-TuM">
+                                <rect key="frame" x="100" y="544" width="214" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="vxJ-ZS-0zx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <size key="titleShadowOffset" width="0.0" height="-3"/>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="******" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Xp-6A-qtU">
+                                <rect key="frame" x="64" y="490" width="330" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Kgs-Bk-Zvj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Pmz-lV-G7f" firstAttribute="trailing" secondItem="Dsz-bO-XB2" secondAttribute="trailing" id="585-II-uil"/>
+                            <constraint firstItem="7GR-jY-v4w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="5ab-cW-UAn"/>
+                            <constraint firstItem="Pmz-lV-G7f" firstAttribute="top" secondItem="Dsz-bO-XB2" secondAttribute="bottom" constant="8" id="8kO-Kh-cH9"/>
+                            <constraint firstItem="5Xp-6A-qtU" firstAttribute="top" secondItem="YzZ-9e-BNa" secondAttribute="bottom" constant="8" id="9NZ-Ul-P27"/>
+                            <constraint firstItem="7GR-jY-v4w" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="EAR-Tc-FYD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PkM-N0-TuM" secondAttribute="trailing" constant="100" id="KAI-rK-Fz3"/>
+                            <constraint firstItem="YzZ-9e-BNa" firstAttribute="leading" secondItem="Dsz-bO-XB2" secondAttribute="trailing" constant="10" id="MDX-k1-j3t"/>
+                            <constraint firstItem="PkM-N0-TuM" firstAttribute="top" secondItem="5Xp-6A-qtU" secondAttribute="bottom" constant="20" id="MgP-hn-A3N"/>
+                            <constraint firstItem="5Xp-6A-qtU" firstAttribute="height" secondItem="YzZ-9e-BNa" secondAttribute="height" id="Msn-rc-qTO"/>
+                            <constraint firstItem="Pmz-lV-G7f" firstAttribute="height" secondItem="Dsz-bO-XB2" secondAttribute="height" id="NYf-1N-1VL"/>
+                            <constraint firstItem="YzZ-9e-BNa" firstAttribute="leading" secondItem="Dsz-bO-XB2" secondAttribute="trailing" constant="10" id="QhR-FG-IzV"/>
+                            <constraint firstItem="5Xp-6A-qtU" firstAttribute="leading" secondItem="YzZ-9e-BNa" secondAttribute="leading" id="Tg2-bJ-M1j"/>
+                            <constraint firstItem="Pmz-lV-G7f" firstAttribute="leading" secondItem="Dsz-bO-XB2" secondAttribute="leading" id="V4N-3K-aiq"/>
+                            <constraint firstItem="Dsz-bO-XB2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aFa-Qt-QM9"/>
+                            <constraint firstItem="Dsz-bO-XB2" firstAttribute="top" secondItem="7GR-jY-v4w" secondAttribute="bottom" id="bdn-EZ-NOn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YzZ-9e-BNa" secondAttribute="trailing" constant="20" id="c1Y-iQ-RHH"/>
+                            <constraint firstItem="5Xp-6A-qtU" firstAttribute="width" secondItem="YzZ-9e-BNa" secondAttribute="width" id="f5t-Sm-RyS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7GR-jY-v4w" secondAttribute="trailing" constant="107" id="iOl-78-2TU"/>
+                            <constraint firstItem="YzZ-9e-BNa" firstAttribute="top" secondItem="7GR-jY-v4w" secondAttribute="bottom" id="m9l-Mb-NA3"/>
+                            <constraint firstItem="Pmz-lV-G7f" firstAttribute="width" secondItem="Dsz-bO-XB2" secondAttribute="width" id="szV-Zq-mqZ"/>
+                            <constraint firstItem="5Xp-6A-qtU" firstAttribute="trailing" secondItem="YzZ-9e-BNa" secondAttribute="trailing" id="tSc-88-n1E"/>
+                            <constraint firstItem="PkM-N0-TuM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="tUY-Lm-fa3"/>
+                            <constraint firstItem="7GR-jY-v4w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xUl-cX-qHp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="JQ0-58-JEd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kEk-pR-92k">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RyJ-v2-SUN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DoQ-hs-oCd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2yx-jJ-6Rw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EdZ-ds-TQc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BG6.jpg" width="5184" height="3456"/>
+        <image name="FixItLogoW2.png" width="332.8800048828125" height="332.8800048828125"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="lock.fill" catalog="system" width="128" height="128"/>
+    </resources>
 </document>
