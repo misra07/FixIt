@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD22117D25169A9700F76157 /* covid-01.png in Resources */ = {isa = PBXBuildFile; fileRef = CD22117C25169A9700F76157 /* covid-01.png */; };
+		CD3C0D252516BCEB0065184A /* Plumbing.png in Resources */ = {isa = PBXBuildFile; fileRef = CD3C0D1D2516BCE90065184A /* Plumbing.png */; };
+		CD3C0D262516BCEB0065184A /* Flooring.png in Resources */ = {isa = PBXBuildFile; fileRef = CD3C0D1E2516BCEA0065184A /* Flooring.png */; };
+		CD3C0D272516BCEB0065184A /* carwash.png in Resources */ = {isa = PBXBuildFile; fileRef = CD3C0D1F2516BCEA0065184A /* carwash.png */; };
+		CD3C0D282516BCEB0065184A /* cleaning.png in Resources */ = {isa = PBXBuildFile; fileRef = CD3C0D202516BCEA0065184A /* cleaning.png */; };
+		CD3C0D292516BCEB0065184A /* Carpentry.png in Resources */ = {isa = PBXBuildFile; fileRef = CD3C0D212516BCEA0065184A /* Carpentry.png */; };
+		CD3C0D2A2516BCEB0065184A /* Electrical.png in Resources */ = {isa = PBXBuildFile; fileRef = CD3C0D222516BCEA0065184A /* Electrical.png */; };
+		CD3C0D2B2516BCEB0065184A /* laundry.png in Resources */ = {isa = PBXBuildFile; fileRef = CD3C0D232516BCEA0065184A /* laundry.png */; };
+		CD3C0D2C2516BCEB0065184A /* Landscaping.png in Resources */ = {isa = PBXBuildFile; fileRef = CD3C0D242516BCEB0065184A /* Landscaping.png */; };
+		CD63C9332512C9390086CA7A /* ServicesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD63C9322512C9390086CA7A /* ServicesVC.swift */; };
 		CD6B8244250E63EB008D1047 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6B8243250E63EB008D1047 /* AppDelegate.swift */; };
 		CD6B8246250E63EB008D1047 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6B8245250E63EB008D1047 /* SceneDelegate.swift */; };
 		CD6B8248250E63EB008D1047 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6B8247250E63EB008D1047 /* ViewController.swift */; };
@@ -33,6 +43,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD22117C25169A9700F76157 /* covid-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "covid-01.png"; sourceTree = "<group>"; };
+		CD3C0D1D2516BCE90065184A /* Plumbing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Plumbing.png; sourceTree = "<group>"; };
+		CD3C0D1E2516BCEA0065184A /* Flooring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flooring.png; sourceTree = "<group>"; };
+		CD3C0D1F2516BCEA0065184A /* carwash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carwash.png; sourceTree = "<group>"; };
+		CD3C0D202516BCEA0065184A /* cleaning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cleaning.png; sourceTree = "<group>"; };
+		CD3C0D212516BCEA0065184A /* Carpentry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Carpentry.png; sourceTree = "<group>"; };
+		CD3C0D222516BCEA0065184A /* Electrical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Electrical.png; sourceTree = "<group>"; };
+		CD3C0D232516BCEA0065184A /* laundry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laundry.png; sourceTree = "<group>"; };
+		CD3C0D242516BCEB0065184A /* Landscaping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Landscaping.png; sourceTree = "<group>"; };
+		CD63C9322512C9390086CA7A /* ServicesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesVC.swift; sourceTree = "<group>"; };
 		CD6B8240250E63EB008D1047 /* FixIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FixIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6B8243250E63EB008D1047 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD6B8245250E63EB008D1047 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +91,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD3C0D2E2516BD210065184A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CD3C0D212516BCEA0065184A /* Carpentry.png */,
+				CD3C0D1F2516BCEA0065184A /* carwash.png */,
+				CD3C0D202516BCEA0065184A /* cleaning.png */,
+				CD3C0D222516BCEA0065184A /* Electrical.png */,
+				CD3C0D1E2516BCEA0065184A /* Flooring.png */,
+				CD3C0D242516BCEB0065184A /* Landscaping.png */,
+				CD3C0D232516BCEA0065184A /* laundry.png */,
+				CD3C0D1D2516BCE90065184A /* Plumbing.png */,
+				CD22117C25169A9700F76157 /* covid-01.png */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		CD6B8237250E63EB008D1047 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				CD6B8243250E63EB008D1047 /* AppDelegate.swift */,
+				CD63C9322512C9390086CA7A /* ServicesVC.swift */,
 				CD6B8245250E63EB008D1047 /* SceneDelegate.swift */,
 				CD6B8247250E63EB008D1047 /* ViewController.swift */,
 				CD6B8249250E63EB008D1047 /* Main.storyboard */,
@@ -98,6 +135,7 @@
 				CD6B824E250E63EE008D1047 /* LaunchScreen.storyboard */,
 				CD6B8251250E63EE008D1047 /* Info.plist */,
 				CD6B8277250E8520008D1047 /* Logo1.png */,
+				CD3C0D2E2516BD210065184A /* Services */,
 				CD6B8279250E9350008D1047 /* FixItLogoW1-01.png */,
 				CD6B827B250EB62D008D1047 /* FixItLogoW2.png */,
 				CD6B8257250E6CC0008D1047 /* BG */,
@@ -184,23 +222,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD3C0D2C2516BCEB0065184A /* Landscaping.png in Resources */,
 				CD6B8273250E6FD0008D1047 /* BG9.jpg in Resources */,
 				CD6B825B250E6F77008D1047 /* BG2.jpg in Resources */,
 				CD6B8278250E8520008D1047 /* Logo1.png in Resources */,
 				CD6B826A250E6FD0008D1047 /* BG10.jpg in Resources */,
 				CD6B827C250EB62D008D1047 /* FixItLogoW2.png in Resources */,
 				CD6B8271250E6FD0008D1047 /* BG12.jpg in Resources */,
+				CD22117D25169A9700F76157 /* covid-01.png in Resources */,
+				CD3C0D272516BCEB0065184A /* carwash.png in Resources */,
 				CD6B826D250E6FD0008D1047 /* BG13.jpg in Resources */,
 				CD6B826C250E6FD0008D1047 /* BG11.jpg in Resources */,
+				CD3C0D262516BCEB0065184A /* Flooring.png in Resources */,
 				CD6B8259250E6E5B008D1047 /* BG1.jpg in Resources */,
+				CD3C0D282516BCEB0065184A /* cleaning.png in Resources */,
 				CD6B8272250E6FD0008D1047 /* BG7.jpg in Resources */,
+				CD3C0D252516BCEB0065184A /* Plumbing.png in Resources */,
 				CD6B826E250E6FD0008D1047 /* BG14.jpg in Resources */,
 				CD6B826B250E6FD0008D1047 /* BG6.jpg in Resources */,
 				CD6B8269250E6FD0008D1047 /* BG4.jpg in Resources */,
+				CD3C0D292516BCEB0065184A /* Carpentry.png in Resources */,
 				CD6B8250250E63EE008D1047 /* LaunchScreen.storyboard in Resources */,
 				CD6B826F250E6FD0008D1047 /* BG5.jpg in Resources */,
+				CD3C0D2B2516BCEB0065184A /* laundry.png in Resources */,
 				CD6B8270250E6FD0008D1047 /* BG3.jpg in Resources */,
 				CD6B8268250E6FD0008D1047 /* BG8.jpg in Resources */,
+				CD3C0D2A2516BCEB0065184A /* Electrical.png in Resources */,
 				CD6B824D250E63EE008D1047 /* Assets.xcassets in Resources */,
 				CD6B827A250E9350008D1047 /* FixItLogoW1-01.png in Resources */,
 				CD6B824B250E63EB008D1047 /* Main.storyboard in Resources */,
@@ -214,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD63C9332512C9390086CA7A /* ServicesVC.swift in Sources */,
 				CD6B8248250E63EB008D1047 /* ViewController.swift in Sources */,
 				CD6B8244250E63EB008D1047 /* AppDelegate.swift in Sources */,
 				CD6B8246250E63EB008D1047 /* SceneDelegate.swift in Sources */,
