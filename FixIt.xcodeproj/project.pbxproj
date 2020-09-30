@@ -40,6 +40,7 @@
 		CD6B8278250E8520008D1047 /* Logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = CD6B8277250E8520008D1047 /* Logo1.png */; };
 		CD6B827A250E9350008D1047 /* FixItLogoW1-01.png in Resources */ = {isa = PBXBuildFile; fileRef = CD6B8279250E9350008D1047 /* FixItLogoW1-01.png */; };
 		CD6B827C250EB62D008D1047 /* FixItLogoW2.png in Resources */ = {isa = PBXBuildFile; fileRef = CD6B827B250EB62D008D1047 /* FixItLogoW2.png */; };
+		CDB2D225251819F7009B6860 /* ServiceSubVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB2D224251819F7009B6860 /* ServiceSubVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		CD6B8277250E8520008D1047 /* Logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo1.png; sourceTree = SOURCE_ROOT; };
 		CD6B8279250E9350008D1047 /* FixItLogoW1-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FixItLogoW1-01.png"; sourceTree = SOURCE_ROOT; };
 		CD6B827B250EB62D008D1047 /* FixItLogoW2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FixItLogoW2.png; sourceTree = SOURCE_ROOT; };
+		CDB2D224251819F7009B6860 /* ServiceSubVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceSubVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				CD6B8245250E63EB008D1047 /* SceneDelegate.swift */,
 				CD6B8247250E63EB008D1047 /* ViewController.swift */,
 				CD6B8249250E63EB008D1047 /* Main.storyboard */,
+				CDB2D224251819F7009B6860 /* ServiceSubVC.swift */,
 				CD6B824C250E63EE008D1047 /* Assets.xcassets */,
 				CD6B824E250E63EE008D1047 /* LaunchScreen.storyboard */,
 				CD6B8251250E63EE008D1047 /* Info.plist */,
@@ -191,7 +194,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = mvnBits;
 				TargetAttributes = {
 					CD6B823F250E63EB008D1047 = {
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDB2D225251819F7009B6860 /* ServiceSubVC.swift in Sources */,
 				CD63C9332512C9390086CA7A /* ServicesVC.swift in Sources */,
 				CD6B8248250E63EB008D1047 /* ViewController.swift in Sources */,
 				CD6B8244250E63EB008D1047 /* AppDelegate.swift in Sources */,
@@ -316,6 +320,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -340,7 +345,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -376,6 +381,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -394,7 +400,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

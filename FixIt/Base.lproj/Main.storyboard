@@ -62,7 +62,6 @@
                                 <rect key="frame" x="20" y="632" width="374" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="Dw0-76-1P3"/>
-                                    <constraint firstAttribute="width" constant="374" id="dkg-cg-Nal"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Next">
@@ -150,14 +149,16 @@
                                 <color key="shadowColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="0.0" height="-3"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Vc-b1-wdN" userLabel="Electrical">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Vc-b1-wdN" userLabel="Electrical">
                                 <rect key="frame" x="167" y="184" width="80" height="80"/>
                                 <color key="backgroundColor" red="0.14117647059999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="Ke0-h5-HmO"/>
                                     <constraint firstAttribute="height" constant="80" id="cP5-ZW-OYu"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="Electrical.png"/>
+                                <connections>
+                                    <action selector="homeServiceSelected:" destination="JqE-f0-Yre" eventType="touchUpInside" id="ma9-Ol-ufx"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Electrical" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="1fc-N2-rEe" userLabel="Electrical LBL">
                                 <rect key="frame" x="167" y="264" width="80" height="20"/>
@@ -169,14 +170,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4F1-Jh-aht" userLabel="Plumbing">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4F1-Jh-aht" userLabel="Plumbing">
                                 <rect key="frame" x="20" y="184" width="80" height="80"/>
                                 <color key="backgroundColor" red="0.14117647059999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="NA9-Cu-EEo"/>
                                     <constraint firstAttribute="height" constant="80" id="npF-1H-M8e"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="Plumbing.png"/>
+                                <state key="normal">
+                                    <color key="titleColor" systemColor="systemYellowColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="homeServiceSelected:" destination="JqE-f0-Yre" eventType="touchUpInside" id="eGI-ke-GCe"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plumbing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="1hO-3r-cfP" userLabel="Plumbing LBL">
                                 <rect key="frame" x="20" y="264" width="80" height="20"/>
@@ -188,7 +194,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbZ-wH-PG9" userLabel="Carpentry">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbZ-wH-PG9" userLabel="Carpentry">
                                 <rect key="frame" x="314" y="184" width="80" height="80"/>
                                 <color key="backgroundColor" red="0.14117647059999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -197,7 +203,9 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="dum-HM-Ulm"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="pLr-cg-RpE"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="Carpentry.png"/>
+                                <connections>
+                                    <action selector="homeServiceSelected:" destination="JqE-f0-Yre" eventType="touchUpInside" id="wE6-na-38J"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carpentry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="3r7-c0-ChW" userLabel="Carpentry LBL">
                                 <rect key="frame" x="314" y="264" width="80" height="20"/>
@@ -211,7 +219,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdQ-G5-fbx" userLabel="Landscaping">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdQ-G5-fbx" userLabel="Landscaping">
                                 <rect key="frame" x="167" y="304" width="80" height="80"/>
                                 <color key="backgroundColor" red="0.14117647059999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -219,7 +227,9 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="WRG-sh-jwq"/>
                                     <constraint firstAttribute="width" constant="80" id="aHk-Lq-CWe"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="Landscaping.png"/>
+                                <connections>
+                                    <action selector="homeServiceSelected:" destination="JqE-f0-Yre" eventType="touchUpInside" id="qmh-CK-4ri"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Landscape" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="pej-YC-x0h" userLabel="Landscaping LBL">
                                 <rect key="frame" x="165.5" y="384" width="83.5" height="20"/>
@@ -231,14 +241,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2r3-NH-tEW" userLabel="Flooring">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2r3-NH-tEW" userLabel="Flooring">
                                 <rect key="frame" x="20" y="304" width="80" height="80"/>
                                 <color key="backgroundColor" red="0.14117647059999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="Hmk-qb-QDn"/>
                                     <constraint firstAttribute="height" constant="80" id="wXI-XC-a1I"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="Flooring.png"/>
+                                <connections>
+                                    <action selector="homeServiceSelected:" destination="JqE-f0-Yre" eventType="touchUpInside" id="PqA-aW-4P4"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flooring" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="HVP-4s-5hd" userLabel="Plooring LBL">
                                 <rect key="frame" x="20" y="384" width="80" height="20"/>
@@ -250,7 +262,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQt-Aw-lnN" userLabel="Cleaning">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQt-Aw-lnN" userLabel="Cleaning">
                                 <rect key="frame" x="314" y="304" width="80" height="80"/>
                                 <color key="backgroundColor" red="0.14117647059999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -259,7 +271,9 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="ooR-qN-cZy"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="zVe-Co-5G9"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="cleaning.png"/>
+                                <connections>
+                                    <action selector="homeServiceSelected:" destination="JqE-f0-Yre" eventType="touchUpInside" id="jbO-RB-hl2"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cleaning" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="uxK-Pg-Fxa" userLabel="Cleaning LBL">
                                 <rect key="frame" x="314" y="384" width="80" height="20"/>
@@ -285,7 +299,7 @@
                                 <color key="shadowColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="0.0" height="-3"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nm2-4p-wIS" userLabel="Car Wash">
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nm2-4p-wIS" userLabel="Car Wash">
                                 <rect key="frame" x="167" y="485" width="80" height="80"/>
                                 <color key="backgroundColor" red="0.14117647059999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -293,7 +307,9 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="HxC-Ea-2Ye"/>
                                     <constraint firstAttribute="height" constant="80" id="IE2-OU-5qL"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="carwash.png"/>
+                                <connections>
+                                    <action selector="homeServiceSelected:" destination="JqE-f0-Yre" eventType="touchUpInside" id="tgN-Qp-ngT"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car Wash" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ihR-gc-eLQ" userLabel="Car Wash LBL">
                                 <rect key="frame" x="167" y="565" width="80" height="20"/>
@@ -305,14 +321,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="387-3a-5gn" userLabel="Laundry">
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="387-3a-5gn" userLabel="Laundry">
                                 <rect key="frame" x="20" y="485" width="80" height="80"/>
                                 <color key="backgroundColor" red="0.14117647059999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="aCE-YR-fl6"/>
                                     <constraint firstAttribute="height" constant="80" id="fqg-it-ChI"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="laundry.png"/>
+                                <connections>
+                                    <action selector="homeServiceSelected:" destination="JqE-f0-Yre" eventType="touchUpInside" id="hyi-eK-Uqk"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Laundry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="PYv-CU-tal" userLabel="Laundry LBL">
                                 <rect key="frame" x="20" y="565" width="80" height="20"/>
@@ -382,10 +400,42 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Services" id="3iC-Ih-4Lb"/>
+                    <connections>
+                        <segue destination="xKH-ah-Iay" kind="show" identifier="showServiceSub" id="kyo-kl-uLW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u7l-td-nKT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1828.985507246377" y="137.94642857142856"/>
+        </scene>
+        <!--Service SubVC-->
+        <scene sceneID="fVJ-rK-iZf">
+            <objects>
+                <tableViewController id="xKH-ah-Iay" customClass="ServiceSubVC" customModule="FixIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="AHc-Oa-5Pe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="servicesSubCell" id="taS-Df-qeq">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="taS-Df-qeq" id="A3M-wu-Aw5">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="xKH-ah-Iay" id="Boa-LC-Dsw"/>
+                            <outlet property="delegate" destination="xKH-ah-Iay" id="RGw-Dq-z4A"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="U2Q-fu-MvN"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fqa-a4-1Kb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2672" y="138"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kEk-pR-92k">
@@ -408,16 +458,8 @@
     </scenes>
     <resources>
         <image name="BG6.jpg" width="5184" height="3456"/>
-        <image name="Carpentry.png" width="1327.9200439453125" height="1327.9200439453125"/>
-        <image name="Electrical.png" width="1327.9200439453125" height="1327.9200439453125"/>
         <image name="FixItLogoW2.png" width="332.8800048828125" height="332.8800048828125"/>
-        <image name="Flooring.png" width="1327.9200439453125" height="1327.9200439453125"/>
-        <image name="Landscaping.png" width="1327.9200439453125" height="1327.9200439453125"/>
-        <image name="Plumbing.png" width="1327.9200439453125" height="1327.9200439453125"/>
-        <image name="carwash.png" width="1327.9200439453125" height="1327.9200439453125"/>
-        <image name="cleaning.png" width="1327.9200439453125" height="1327.9200439453125"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="laundry.png" width="1327.9200439453125" height="1327.9200439453125"/>
         <image name="lock.fill" catalog="system" width="128" height="128"/>
         <systemColor name="groupTableViewBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -427,6 +469,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
