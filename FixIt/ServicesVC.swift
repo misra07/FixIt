@@ -27,6 +27,10 @@ class ServicesVC: UIViewController {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+        self.tabBarController?.viewDidAppear(true)
+    }
     
     //MARK: - Prepare for segues
 
@@ -35,7 +39,6 @@ class ServicesVC: UIViewController {
             
             let destVC = segue.destination as! ServiceSubVC
             destVC.passedClickedHomeService =  clickedHomeService as String
-          
         }
     }
 }

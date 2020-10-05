@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RyJ-v2-SUN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gHV-9b-IXV">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -17,11 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="80e-Cp-ulu" userLabel="BG">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="907"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FixItLogoW2.png" translatesAutoresizingMaskIntoConstraints="NO" id="7GR-jY-v4w" userLabel="Logo">
                                 <rect key="frame" x="107" y="248" width="200" height="200"/>
                                 <constraints>
@@ -94,7 +89,7 @@
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
                             <constraint firstItem="Pmz-lV-G7f" firstAttribute="trailing" secondItem="Dsz-bO-XB2" secondAttribute="trailing" id="585-II-uil"/>
                             <constraint firstItem="7GR-jY-v4w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="5ab-cW-UAn"/>
@@ -128,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+            <point key="canvasLocation" x="1957.9710144927537" y="137.94642857142856"/>
         </scene>
         <!--Services-->
         <scene sceneID="xmv-gU-rMe">
@@ -406,7 +401,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u7l-td-nKT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1828.985507246377" y="137.94642857142856"/>
+            <point key="canvasLocation" x="2739.130434782609" y="137.94642857142856"/>
         </scene>
         <!--Service SubVC-->
         <scene sceneID="fVJ-rK-iZf">
@@ -435,12 +430,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqa-a4-1Kb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2672" y="138"/>
+            <point key="canvasLocation" x="3581.1594202898555" y="137.94642857142856"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="kEk-pR-92k">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RyJ-v2-SUN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="8bf-Fu-rfu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DoQ-hs-oCd">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -453,11 +449,28 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EdZ-ds-TQc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Bbq-3A-Esz">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="gHV-9b-IXV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HeI-f1-JpZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="RyJ-v2-SUN" kind="relationship" relationship="viewControllers" id="JcP-0L-ywd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="872-Hf-FdG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
     <resources>
-        <image name="BG6.jpg" width="5184" height="3456"/>
         <image name="FixItLogoW2.png" width="332.8800048828125" height="332.8800048828125"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="lock.fill" catalog="system" width="128" height="128"/>
@@ -469,6 +482,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
