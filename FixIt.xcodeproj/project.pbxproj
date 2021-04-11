@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25B917EA914A43FEEBE03097 /* Pods_FixIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F242F0D36D63F2E17E4AAA75 /* Pods_FixIt.framework */; };
 		CD22117D25169A9700F76157 /* covid-01.png in Resources */ = {isa = PBXBuildFile; fileRef = CD22117C25169A9700F76157 /* covid-01.png */; };
 		CD3C0D252516BCEB0065184A /* Plumbing.png in Resources */ = {isa = PBXBuildFile; fileRef = CD3C0D1D2516BCE90065184A /* Plumbing.png */; };
 		CD3C0D262516BCEB0065184A /* Flooring.png in Resources */ = {isa = PBXBuildFile; fileRef = CD3C0D1E2516BCEA0065184A /* Flooring.png */; };
@@ -40,10 +41,13 @@
 		CD6B8278250E8520008D1047 /* Logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = CD6B8277250E8520008D1047 /* Logo1.png */; };
 		CD6B827A250E9350008D1047 /* FixItLogoW1-01.png in Resources */ = {isa = PBXBuildFile; fileRef = CD6B8279250E9350008D1047 /* FixItLogoW1-01.png */; };
 		CD6B827C250EB62D008D1047 /* FixItLogoW2.png in Resources */ = {isa = PBXBuildFile; fileRef = CD6B827B250EB62D008D1047 /* FixItLogoW2.png */; };
+		CDA478D22621E397008D1EB1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDA478D12621E396008D1EB1 /* GoogleService-Info.plist */; };
 		CDB2D225251819F7009B6860 /* ServiceSubVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB2D224251819F7009B6860 /* ServiceSubVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		059AAD2DBE47B77F83AF83BF /* Pods-FixIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FixIt.debug.xcconfig"; path = "Target Support Files/Pods-FixIt/Pods-FixIt.debug.xcconfig"; sourceTree = "<group>"; };
+		83E3B6131E374601347ADD7B /* Pods-FixIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FixIt.release.xcconfig"; path = "Target Support Files/Pods-FixIt/Pods-FixIt.release.xcconfig"; sourceTree = "<group>"; };
 		CD22117C25169A9700F76157 /* covid-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "covid-01.png"; sourceTree = "<group>"; };
 		CD3C0D1D2516BCE90065184A /* Plumbing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Plumbing.png; sourceTree = "<group>"; };
 		CD3C0D1E2516BCEA0065184A /* Flooring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flooring.png; sourceTree = "<group>"; };
@@ -79,7 +83,9 @@
 		CD6B8277250E8520008D1047 /* Logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo1.png; sourceTree = SOURCE_ROOT; };
 		CD6B8279250E9350008D1047 /* FixItLogoW1-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FixItLogoW1-01.png"; sourceTree = SOURCE_ROOT; };
 		CD6B827B250EB62D008D1047 /* FixItLogoW2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FixItLogoW2.png; sourceTree = SOURCE_ROOT; };
+		CDA478D12621E396008D1EB1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CDB2D224251819F7009B6860 /* ServiceSubVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceSubVC.swift; sourceTree = "<group>"; };
+		F242F0D36D63F2E17E4AAA75 /* Pods_FixIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FixIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,12 +93,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25B917EA914A43FEEBE03097 /* Pods_FixIt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E70E1DA277A96633B16DD4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				059AAD2DBE47B77F83AF83BF /* Pods-FixIt.debug.xcconfig */,
+				83E3B6131E374601347ADD7B /* Pods-FixIt.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CD3C0D2E2516BD210065184A /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +130,8 @@
 			children = (
 				CD6B8242250E63EB008D1047 /* FixIt */,
 				CD6B8241250E63EB008D1047 /* Products */,
+				2E70E1DA277A96633B16DD4F /* Pods */,
+				E0313EDB71209CB884C8DB6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +152,7 @@
 				CD6B8247250E63EB008D1047 /* ViewController.swift */,
 				CD6B8249250E63EB008D1047 /* Main.storyboard */,
 				CDB2D224251819F7009B6860 /* ServiceSubVC.swift */,
+				CDA478D12621E396008D1EB1 /* GoogleService-Info.plist */,
 				CD6B824C250E63EE008D1047 /* Assets.xcassets */,
 				CD6B824E250E63EE008D1047 /* LaunchScreen.storyboard */,
 				CD6B8251250E63EE008D1047 /* Info.plist */,
@@ -167,6 +186,14 @@
 			path = BG;
 			sourceTree = "<group>";
 		};
+		E0313EDB71209CB884C8DB6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F242F0D36D63F2E17E4AAA75 /* Pods_FixIt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,9 +201,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD6B8254250E63EE008D1047 /* Build configuration list for PBXNativeTarget "FixIt" */;
 			buildPhases = (
+				1CE9FB427154F0FAD2895F70 /* [CP] Check Pods Manifest.lock */,
 				CD6B823C250E63EB008D1047 /* Sources */,
 				CD6B823D250E63EB008D1047 /* Frameworks */,
 				CD6B823E250E63EB008D1047 /* Resources */,
+				76689A60D2F57AE2CEA185F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -242,6 +271,7 @@
 				CD6B8272250E6FD0008D1047 /* BG7.jpg in Resources */,
 				CD3C0D252516BCEB0065184A /* Plumbing.png in Resources */,
 				CD6B826E250E6FD0008D1047 /* BG14.jpg in Resources */,
+				CDA478D22621E397008D1EB1 /* GoogleService-Info.plist in Resources */,
 				CD6B826B250E6FD0008D1047 /* BG6.jpg in Resources */,
 				CD6B8269250E6FD0008D1047 /* BG4.jpg in Resources */,
 				CD3C0D292516BCEB0065184A /* Carpentry.png in Resources */,
@@ -258,6 +288,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CE9FB427154F0FAD2895F70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FixIt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76689A60D2F57AE2CEA185F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FixIt/Pods-FixIt-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FixIt/Pods-FixIt-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FixIt/Pods-FixIt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CD6B823C250E63EB008D1047 /* Sources */ = {
@@ -412,6 +484,7 @@
 		};
 		CD6B8255250E63EE008D1047 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 059AAD2DBE47B77F83AF83BF /* Pods-FixIt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -431,6 +504,7 @@
 		};
 		CD6B8256250E63EE008D1047 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83E3B6131E374601347ADD7B /* Pods-FixIt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

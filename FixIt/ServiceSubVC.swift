@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MessageUI
 
-class ServiceSubVC: UITableViewController {
+class ServiceSubVC: UITableViewController, MFMailComposeViewControllerDelegate {
    
     var passedClickedHomeService = ""
     
@@ -141,11 +142,9 @@ class ServiceSubVC: UITableViewController {
         }
         
         if cell.textLabel!.text == "Custom" {
-            cell.layer.borderColor = #colorLiteral(red: 1, green: 0.6439015865, blue: 0.5808330774, alpha: 1)
-            cell.layer.borderWidth = 1
+            cell.layer.borderColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
+            cell.layer.borderWidth = 2
         }
-        
-        
         return cell
     }
     
@@ -166,7 +165,7 @@ class ServiceSubVC: UITableViewController {
             let alert = UIAlertController(title: "Custom request", message: "Please type your custom request", preferredStyle: .alert)
             let action = UIAlertAction(title: "Submit", style: .default) { (alert) in
                 
-                self.customRequest = alertText.text ?? "What"
+                self.customRequest = alertText.text ?? "alert Default"
                 //self.selectedRow.textLabel!.text! = "* \(self.customRequest)"
                 
                 switch self.customRequest {
@@ -210,13 +209,11 @@ class ServiceSubVC: UITableViewController {
             default:
                 print ("error on selected subset")
             }
-            
-            
             if selectedSubSet.isEmpty == false {
                 nxtBTN.isEnabled = true
             } else {
                 nxtBTN.isEnabled = false
-            }
+                }
         }
 
     }
@@ -228,10 +225,93 @@ class ServiceSubVC: UITableViewController {
         selectedSubSet.remove("")
         print("Category: \(title ?? "Error: Missing Category!")")
         print("Requested service: \(selectedSubSet)")
-        
+        showMailComposer()
+        //noMailAlert()
         //print("this is a custom request: \(customRequest)")
         //print(selectedCell)
     }
     
+    func showMailComposer(){
+        guard MFMailComposeViewController.canSendMail() else {
+            //alert user
+            noMailAlert()
+            
+            return
+        }
+        
+        let composer = MFMailComposeViewController()
+        composer.mailComposeDelegate = self
+        composer.setToRecipients(["misra01@icloud.com"])
+        composer.setSubject("3K call: \(title ?? "Unspecified")")
+        composer.setMessageBody("\(selectedSubSet)", isHTML: false)
+        present(composer, animated: true)
+    }
     
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+         
+        if let _ = error {
+            //show error alert
+            
+            controller.dismiss(animated: true)
+            return
+        }
+        switch result {
+        case .cancelled:
+            print("cancelled")
+            controller.dismiss(animated: true)
+//cancellation alert
+            let alert = UIAlertController(title: "Query submission cancelled", message: "Your query submission has been cancelled", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Dismiss", style: .destructive, handler: {action in
+                print("cancellation alert error")
+            }))
+            present(alert, animated: true)
+        
+        case .failed:
+        print("failed to send")
+            controller.dismiss(animated: true)
+//failed alert
+            let alert = UIAlertController(title: "Query submission failed", message: "Your query submission failed. Please try again later", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Dismiss", style: .destructive, handler: {action in
+                print("failed alert error")
+            }))
+            present(alert, animated: true)
+            
+        case .saved:
+            print("saved mail")
+            controller.dismiss(animated: true)
+//saved alert
+            let alert = UIAlertController(title: "Query saved", message: "Your query submission has been saved to draft. You can submit it anytime from your draft folder", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Dismiss", style: .destructive, handler: {action in
+                print("saved alert error")
+            }))
+            present(alert, animated: true)
+            
+        case .sent:
+            print("sent")
+            controller.dismiss(animated: true)
+//sent alert
+            let alert = UIAlertController(title: "Query submitted", message: "Your query has been submitted. We will be in touch", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Dismiss", style: .destructive, handler: {action in
+                print("sent alert error")
+            }))
+            present(alert, animated: true)
+            
+        default:
+            print("something went wrong")
+            controller.dismiss(animated: true)
+            noMailAlert()
+        }
+        controller.dismiss(animated: true)
+        return
+    }
+    
+    func noMailAlert(){
+        let alert = UIAlertController(title: "Could not load email", message: "You do not seem to have an email set up. Please email your query to misra01@icloud.com", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .destructive, handler: {action in
+            print("noMailAlert error")
+        }))
+        present(alert, animated: true)
+    }
 }
+
+
